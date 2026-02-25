@@ -27,8 +27,8 @@ The project demonstrates:
 ---
 
 ## 🧠 Architecture
+
 Streamlit Frontend  →  FastAPI Backend  →  Random Forest Model (.pkl)
-(User Input)            (REST API)           (Scikit-Learn)
 ---
 
 ## 🏗️ Tech Stack
@@ -47,21 +47,22 @@ Streamlit Frontend  →  FastAPI Backend  →  Random Forest Model (.pkl)
 ---
 
 ## 📂 Project Structure
-Car-Price-Prediction-Full-Stack/
-│
-├── main.py                     # FastAPI application
-├── model.py                    # Model loading & prediction logic
-├── schema.py                   # Pydantic validation schema
-├── streamlit_app.py            # Streamlit frontend
-├── train.py                    # Model training pipeline
-│
-├── random_forest_model.pkl     # Trained ML model
-├── feature_columns.pkl         # Feature alignment reference
-├── cardekho_data.csv           # Dataset
-│
-├── requirements.txt
-├── runtime.txt
-└── README.md
+
+	Car-Price-Prediction-Full-Stack/
+	│
+	├── main.py                     # FastAPI application
+	├── model.py                    # Model loading & prediction logic
+	├── schema.py                   # Pydantic validation schema
+	├── streamlit_app.py            # Streamlit frontend
+	├── train.py                    # Model training pipeline
+	│
+	├── random_forest_model.pkl     # Trained ML model
+	├── feature_columns.pkl         # Feature alignment reference
+	├── cardekho_data.csv           # Dataset
+	│
+	├── requirements.txt
+	├── runtime.txt
+	└── README.md
 
 ## 🧠 Machine Learning Pipeline
 
@@ -80,49 +81,56 @@ Car-Price-Prediction-Full-Stack/
 
 1️⃣ Clone Repository
 
+	git clone https://github.com/prerit-18/Car-Price-Prediction-Full-Stack.git
 
-git clone https://github.com/prerit-18/Car-Price-Prediction-Full-Stack.git
-
-cd Car-Price-Prediction-Full-Stack
+	cd Car-Price-Prediction-Full-Stack
 
 2️⃣ Create Virtual Environment
 
-python3 -m venv .venv
+	python3 -m venv .venv
 
-source .venv/bin/activate   # Mac/Linux
+	source .venv/bin/activate   # Mac/Linux
 
 3️⃣ Install Dependencies
 
-pip install -r requirements.txt
+	pip install -r requirements.txt
 
 4️⃣ Run FastAPI Backend
-uvicorn main:app --reload
 
-Backend will run at:
-http://127.0.0.1:8000
+	uvicorn main:app --reload
+
+	Backend will run at:
+
+	http://127.0.0.1:8000
 
 5️⃣ Run Streamlit Frontend
-Open a new terminal and run:
-streamlit run streamlit_app.py
 
-Frontend will run at:
-http://localhost:8501 bash
+	Open a new terminal and run:
+
+	streamlit run streamlit_app.py
+
+	Frontend will run at:
+
+	http://localhost:8501 bash
+
+---
 
 ## 🎯 Key Highlights
 
-✔ Clean REST API architecture
-✔ Structured Pydantic validation
-✔ Feature column alignment for safe inference
-✔ Serialized ML model for fast predictions
-✔ Separate training script
-✔ Full-stack integration
-✔ Deployment ready
+	•	Clean and scalable REST API architecture built with FastAPI
+	•	Strong input validation using structured Pydantic schemas
+	•	Safe feature column alignment to ensure reliable model inference
+	•	Serialized machine learning model using Joblib for fast predictions
+	•	Separate and reusable training pipeline (train.py)
+	•	Seamless full-stack integration between FastAPI backend and Streamlit frontend
+	•	Deployment-ready project structure for cloud platforms and Docker
 
 ⸻
 
 ## 🌍 Deployment Ready
 
 This project can be deployed on:
+		
 		•   Render
 		•	Railway
 		•	Streamlit Cloud
@@ -144,6 +152,8 @@ This project can be deployed on:
 ## 👨‍💻 Author
 
 Prerit
+
 Machine Learning & Backend Developer
+
 
 Building intelligent, production-ready systems using AI + Backend engineering.
