@@ -33,3 +33,4 @@ def test():
 def predict(features: CarFeatures):
     price = predict_price(features.model_dump())
     return PredictionResponse(prediction_price=price)
+
