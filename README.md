@@ -51,18 +51,17 @@ Car-Price-Prediction-Full-Stack/
 │
 ├── main.py                     # FastAPI application
 ├── model.py                    # Model loading & prediction logic
-├── schema.py                   # Pydantic validation schemas
+├── schema.py                   # Pydantic validation schema
 ├── streamlit_app.py            # Streamlit frontend
-├── train.py                    # Model training script
+├── train.py                    # Model training pipeline
 │
 ├── random_forest_model.pkl     # Trained ML model
-├── feature_columns.pkl         # Feature alignment file
-├── cardekho_data.csv           # Dataset used for training
+├── feature_columns.pkl         # Feature alignment reference
+├── cardekho_data.csv           # Dataset
 │
 ├── requirements.txt
 ├── runtime.txt
 └── README.md
----
 
 ## 🧠 Machine Learning Pipeline
 
@@ -81,14 +80,19 @@ Car-Price-Prediction-Full-Stack/
 
 1️⃣ Clone Repository
 
+
 git clone https://github.com/prerit-18/Car-Price-Prediction-Full-Stack.git
+
 cd Car-Price-Prediction-Full-Stack
 
 2️⃣ Create Virtual Environment
+
 python3 -m venv .venv
+
 source .venv/bin/activate   # Mac/Linux
 
 3️⃣ Install Dependencies
+
 pip install -r requirements.txt
 
 4️⃣ Run FastAPI Backend
@@ -119,16 +123,16 @@ http://localhost:8501 bash
 ## 🌍 Deployment Ready
 
 This project can be deployed on:
-	•	Render
-	•	Railway
-	•	Streamlit Cloud
-	•	Docker
-	•	AWS / GCP / Azure
+		•   Render
+		•	Railway
+		•	Streamlit Cloud
+		•	Docker
+		•	AWS / GCP / Azure
 
 ⸻
 
 ## 📈 Future Improvements
-	•	Add model evaluation metrics (R², MAE, RMSE)
+	• 	Add model evaluation metrics (R², MAE, RMSE)
 	•	Add Docker containerization
 	•	Add CI/CD pipeline
 	•	Add model versioning
